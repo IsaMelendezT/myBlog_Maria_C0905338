@@ -1,3 +1,101 @@
 * {
-    border: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+header {
+    background-color: #F3D9DC;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    background-color: #F3D9DC;
+    border-top: 1px #2C0D0F solid;
+    border-bottom: 1px #2C0D0F solid;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav a {
+    line-height: 2em;
+    color: #2C0D0F;
+    width: 12%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: #2C0D0F;
+    color: white;
+}
+
+footer {
+    border-top: 1px #2C0D0F solid;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #F3D9DC;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2C0D0F;
+    line-height: 0.2em;
+}
+
+#socialMedia {
+    padding-top: 0.5%;
+}
+#socialMedia a {
+    color: #2C0D0F;
+    font-size: 1.8em;
+}
+
+#copyright{
+    font-size: 1.2em;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #2C0D0F;
+}
+
+@media (min-width: 1127px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px; 
+        background-color: #F3D9DC; 
+        border-bottom: 1px #2C0D0F solid;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px; 
+        border: none;
+    }
+
+    #logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav a {
+        background-color: #2C0D0F;
+        color: white;
+        border-radius: 0.5em;
+    }
+
+    nav a:hover {
+        color: #2C0D0F;
+        border: 1px #2C0D0F solid;
+        background-color: #F3D9DC;
+    }
+
 }
