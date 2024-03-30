@@ -9,23 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         DeleteImage();
         ChangeTitle("My perfectly imperfect family");
         CreateImageElement("../media/img/family.png", "Family Picture")
-
-        const description = document.getElementById("description2");
-
-        // Create a new ul element
-        const ul = document.createElement("ul");
-
-        // Create and append li elements to the ul
-        const familyMembers = ["Dad: Olivo", "Mom: Stella", "Sister: Juliana", "Niece: MaVi"];
-        familyMembers.forEach(function(member) {
-            const li = document.createElement("li");
-            li.textContent = member;
-            ul.appendChild(li);
-        });
-
-        // Append the ul to the description element
-        description.appendChild(ul);
-    
+        CreateList();
     });
 
     showStudies.addEventListener('click', function(){
@@ -75,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         iframe.width = "560";
         iframe.height = "315";
         iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        iframe.style.maxWidth = '80%';
         video.appendChild(iframe);
     }
 
@@ -82,7 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const image = document.getElementById("pic");
         const img = document.createElement("img");
         img.src = src;
-        img.alt = alt; 
+        img.alt = alt;
+        img.style.width = '50%'; 
         image.appendChild(img);
     }
 
@@ -92,8 +78,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function ChangeDescription(newdescription){
-        const description = document.querySelector(".description p");
-        description.textContent = newdescription;
+        const description1 = document.querySelector('#description2');
+        description1.innerHTML = '';
+        let p = document.createElement('p');
+        p.textContent = newdescription;
+        description1.appendChild(p);
+    }
+
+    function CreateList(){
+        const description = document.querySelector('#description2');
+        description.innerHTML = '';
+
+        // Create a new ul element
+        const ul = document.createElement("ul");
+
+        // Create and append li elements to the ul
+        const familyMembers = ["Dad: Olivo", "Mom: Stella", "Sister: Juliana", "Niece: MaVi"];
+        familyMembers.forEach(function(member) {
+            const li = document.createElement("li");
+            li.textContent = member;
+            ul.appendChild(li);
+        });
+
+        // Append the ul to the description element
+        description.appendChild(ul);
     }
 
 });
