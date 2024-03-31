@@ -37,15 +37,13 @@ nav a:hover {
 
 footer {
     border-top: 1px #2C0D0F solid;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
     background-color: #F3D9DC;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #2C0D0F;
     line-height: 0.2em;
+    margin-bottom: 0;
+    padding-bottom: 2%;
 }
 
 #socialMedia {
@@ -64,6 +62,74 @@ footer {
     text-decoration: none;
     color: #2C0D0F;
 }
+
+aside {
+    margin: 0 2%;
+    text-align: center;
+}
+
+aside ul li {
+    list-style-type: none;
+    line-height: 2.5em;
+    background-color: #2C0D0F;
+    margin: 7% 0;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.home {
+    margin: 1% 1%;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home:hover {
+    opacity: 1;
+}
+
+.home p{
+    visibility: hidden;
+    font-size: 3em;
+    color: white;
+}
+
+.home:hover p{
+    visibility: visible;
+}
+
+#personal-page {
+    background-image: url("../media/img/personal.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#work-page {
+    background-image: url("../media/img/toys.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#travel-page {
+    background-image: url("../media/img/viaje3.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#contact-div{
+    background-image: url("../media/img/family.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
 
 @media (min-width: 1127px) {
     header {
@@ -96,6 +162,29 @@ footer {
         color: #2C0D0F;
         border: 1px #2C0D0F solid;
         background-color: #F3D9DC;
+    }
+    
+    aside {
+        float: right;
+        width: 30%;
+        border-left: 1px #2C0D0F solid;
+        padding: 0 2%;
+    }
+
+    section {
+        width: 65%;
+    }
+
+    .home {
+        width: 45%;
+        height: 50vh;
+        float: left;
+        border: 1px #2C0D0F solid;
+        border-radius: 1em;
+    }
+
+    footer {
+        clear: both;
     }
 
 }
