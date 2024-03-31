@@ -70,7 +70,7 @@ footer {
 }
 
 
-.topic, aside:hover {
+.topic, aside:hover, .work {
     margin: 1% 2% 2% 2%;
     border-radius: 1em;
     background-color: #F3D9DC;
@@ -193,6 +193,31 @@ aside ol li a:hover{
 
 #benefits li {
     line-height: 4em;
+}
+
+/* STYLING WORK PAGE*/
+
+.work p {
+    float: right;
+    width: 45%;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: right;
+}
+.work img {
+    margin: 0 5% 2%;
+    width: 30%;
+}
+
+.work iframe {
+    margin: 0 1% 2%;
+    width: 95%
+}
+
+#nofloat {
+    float: none;
+    width: 95%;
+    text-align: center;
 }
 
 @media (min-width: 769px) {
