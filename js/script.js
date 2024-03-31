@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
             li.textContent = member;
             ul.appendChild(li);
         });
+        ul.style.listStyleType = 'none';
 
         // Append the ul to the description element
         description.appendChild(ul);
