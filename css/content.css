@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-    display: flex;
+    display: block;
     flex: 1;
     justify-content: space-evenly;
     background-color: #F3D9DC;
@@ -24,9 +24,10 @@ nav {
 }
 
 nav a {
+    display: block;
     line-height: 2em;
     color: #2C0D0F;
-    width: 12%;
+    width: 95%;
     text-align: center;
     text-decoration: none;
     font-size: 1.2em;
@@ -35,6 +36,10 @@ nav a {
 nav a:hover {
     background-color: #2C0D0F;
     color: white;
+}
+
+.title-tag {
+    margin-right: 2%;
 }
 
 footer {
@@ -220,6 +225,11 @@ aside ol li a:hover{
     text-align: center;
 }
 
+#logo {
+    visibility: hidden;
+}
+
+
 @media (min-width: 769px) {
 
     section {
@@ -236,6 +246,18 @@ aside ol li a:hover{
     footer {
         clear: both;
     }
+
+    nav {
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+    }
+
+    #logo {
+        visibility: visible;
+        margin-left: 3%;
+    }
+
 }
 
 @media (min-width: 1127px) {
@@ -270,5 +292,7 @@ aside ol li a:hover{
         border: 1px #2C0D0F solid;
         background-color: #F3D9DC;
     }
+
+
 
 }

@@ -128,12 +128,24 @@ aside ul li a{
     background-size: cover;
 }
 
+#logo {
+    visibility: hidden;
+}
+
+.title-tag {
+    margin-right: 2%;
+}
 
 @media (min-width: 768px){
     nav {
         display: flex;
         flex: 1;
         justify-content: space-evenly;
+    }
+
+    #logo {
+        visibility: visible;
+        margin-left: 3%;
     }
 
 }
