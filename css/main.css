@@ -12,7 +12,7 @@ header {
 }
 
 nav {
-    display: flex;
+    display: block;
     flex: 1;
     justify-content: space-evenly;
     background-color: #F3D9DC;
@@ -22,9 +22,10 @@ nav {
 }
 
 nav a {
+    display: block;
     line-height: 2em;
     color: #2C0D0F;
-    width: 12%;
+    width: 95%;
     text-align: center;
     text-decoration: none;
     font-size: 1.2em;
@@ -128,7 +129,14 @@ aside ul li a{
 }
 
 
+@media (min-width: 768px){
+    nav {
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+    }
 
+}
 
 
 @media (min-width: 1127px) {
@@ -141,8 +149,8 @@ aside ul li a{
         border-bottom: 1px #2C0D0F solid;
     }
 
+
     nav {
-        display: flex;
         gap: 20px; 
         border: none;
     }
