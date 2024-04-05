@@ -69,11 +69,12 @@ aside {
     text-align: center;
 }
 
+
 aside ul li {
     list-style-type: none;
     line-height: 2.5em;
     background-color: #2C0D0F;
-    margin: 7% 0;
+    margin: 7% auto;
 }
 
 aside ul li a{
@@ -147,6 +148,7 @@ aside ul li a{
         visibility: visible;
         margin-left: 3%;
     }
+
 
 }
 
